@@ -1737,4 +1737,5 @@ from istoric_aparitii ia
 inner join reviste r on ia.numar = r.numar
 inner join animale a on ia.cod_cip = a.cod_cip
 -- ex 13
+
 --===========================================================================
