@@ -39,13 +39,6 @@ Automated the shelter's integrity rules through various trigger types:
 
 ---
 
-## Integrated Business Logic (Package)
-The core of the system is a **PL/SQL Package** that encapsulates the shelter's integrated workflow. It includes:
-* **Complex Data Types**: Records and collections for internal processing.
-* **Procedures & Functions**: Coordinated actions for checking animal availability, verifying client eligibility, and finalizing adoption contracts in a single transaction.
-
----
-
 ## Database Schema
 The implementation is built upon an Oracle schema featuring:
 * **Entities**: Employee, Animal, Client, Branch, Cage, etc.
@@ -53,7 +46,9 @@ The implementation is built upon an Oracle schema featuring:
 * **Integrity**: Full implementation of PKs, FKs, and Check constraints.
 
 ## Integrated Business Logic (Package)
-
+The core of the system is a **PL/SQL Package** that encapsulates the shelter's integrated workflow. It includes:
+* **Complex Data Types**: Records and collections for internal processing.
+* **Procedures & Functions**: Coordinated actions for checking animal availability, verifying client eligibility, and finalizing adoption contracts in a single transaction.
 * **Weighted Adoption Scoring**: Implements a decision engine that ranks adoption readiness based on a weighted formula: 
   $$Score = (Medical \cdot 0.4) + (Promotion \cdot 0.3) + (Risk \cdot 0.3)$$
 * **Medical Penalty Logic**: Automatically deducts 15 points from the medical score for every non-healthy diagnosis found in the clinical history.
