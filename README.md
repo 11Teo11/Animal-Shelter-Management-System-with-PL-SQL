@@ -40,6 +40,9 @@ Automated the shelter's integrity rules through various trigger types:
 ---
 
 ## Database Schema
+
+<img width="476" height="367" alt="Screenshot 2026-03-04 220002" src="https://github.com/user-attachments/assets/3df7f67b-8028-4321-8415-103d1debbca9" />
+
 The implementation is built upon an Oracle schema featuring:
 * **Entities**: Employee, Animal, Client, Branch, Cage, etc.
 * **Relationships**: Complex associative tables like `medical history` and `adoption history`.
